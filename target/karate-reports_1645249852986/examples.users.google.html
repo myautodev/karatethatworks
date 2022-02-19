@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.users.google</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-02-19 07:50:42 am</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>create a oes</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/google.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">testing this shit</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">create a oes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>15704</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://google.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5529</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">07:50:26.702 karate.env system property was: null 
+07:50:26.759 type was null, defaulting to &#39;chrome&#39;
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(&#39;input[name=q]&#39;, &#39;karate dsl&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1022</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    When click(&#39;input[name=btnI]&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>waitForUrl(&#39;https://github.com/karatelabs/karate&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">9153</div>
+  </div>
+
+   
+  
+  
+
+  <div class="embed" data-parent="0.8"><img src="examples.users.google_1_1645249842671.png"/></div>
+
+  <div class="preformatted" data-parent="0.8">07:50:33.411 waitForUrl - retry #1
+07:50:36.417 waitForUrl - retry #2
+07:50:39.423 waitForUrl - retry #3
+07:50:42.443 waitForUrl: failed after 3 retries and 9052 milliseconds
+07:50:42.464 classpath:examples/users/google.feature:8
+Then waitForUrl(&#39;https://github.com/karatelabs/karate&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: waitForUrl(&#39;https://github.com/karatelabs/karate&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: waitForUrl: failed after 3 retries and 9052 milliseconds
+- com.intuit.karate.driver.DriverOptions.retry(DriverOptions.java:517)
+- com.intuit.karate.driver.DriverOptions.waitForUrl(DriverOptions.java:684)
+- com.intuit.karate.driver.Driver.waitForUrl(Driver.java:242)
+- &lt;js&gt;.:anonymous(Unnamed:1)
+
+classpath:examples/users/google.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
